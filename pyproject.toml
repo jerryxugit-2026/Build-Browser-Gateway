@@ -1,0 +1,21 @@
+[project]
+name = "browser-gateway-mcp"
+version = "0.1.0"
+description = "One MCP door to four browser engines: PinchTab, bb-browser, Agent Reach, Playwright."
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Ziyang Xu" },
+]
+dependencies = [
+    "mcp>=1.2",
+    "pydantic>=2",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
